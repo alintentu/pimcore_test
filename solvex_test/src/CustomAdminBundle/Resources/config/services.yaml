@@ -1,0 +1,3 @@
+services:
+    App\Controller\CustomActionController:
+        tags: ['controller.service_arguments']

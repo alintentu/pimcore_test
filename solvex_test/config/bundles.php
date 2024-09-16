@@ -1,27 +1,28 @@
 <?php
 
-use CustomerManagementFrameworkBundle\PimcoreCustomerManagementFrameworkBundle;
-use OutputDataConfigToolkitBundle\OutputDataConfigToolkitBundle;
-use Pimcore\Bundle\DataHubBundle\PimcoreDataHubBundle;
-use Pimcore\Bundle\EcommerceFrameworkBundle\PimcoreEcommerceFrameworkBundle;
-use Pimcore\Bundle\EcommerceFrameworkBundle\PimcorePaymentProviderPayPalSmartPaymentButtonBundle;
-use Pimcore\Bundle\GlossaryBundle\PimcoreGlossaryBundle;
-use Pimcore\Bundle\GoogleMarketingBundle\PimcoreGoogleMarketingBundle;
-use Pimcore\Bundle\NewsletterBundle\PimcoreNewsletterBundle;
-use Pimcore\Bundle\ObjectMergerBundle\ObjectMergerBundle;
+use App\CustomAdminBundle\CustomAdminBundle;
+use Presta\SitemapBundle\PrestaSitemapBundle;
 use Pimcore\Bundle\SeoBundle\PimcoreSeoBundle;
-use Pimcore\Bundle\StaticRoutesBundle\PimcoreStaticRoutesBundle;
+use Web2PrintToolsBundle\Web2PrintToolsBundle;
+use Pimcore\Bundle\XliffBundle\PimcoreXliffBundle;
+use Pimcore\Bundle\DataHubBundle\PimcoreDataHubBundle;
+use Pimcore\Bundle\TinymceBundle\PimcoreTinymceBundle;
+use Pimcore\Bundle\GlossaryBundle\PimcoreGlossaryBundle;
+use Pimcore\Bundle\ObjectMergerBundle\ObjectMergerBundle;
+use Pimcore\Bundle\NewsletterBundle\PimcoreNewsletterBundle;
 use Pimcore\Bundle\WebToPrintBundle\PimcoreWebToPrintBundle;
 use Pimcore\Bundle\WordExportBundle\PimcoreWordExportBundle;
-use Pimcore\Bundle\XliffBundle\PimcoreXliffBundle;
-use Presta\SitemapBundle\PrestaSitemapBundle;
-use Web2PrintToolsBundle\Web2PrintToolsBundle;
-use Pimcore\Bundle\SimpleBackendSearchBundle\PimcoreSimpleBackendSearchBundle;
+use OutputDataConfigToolkitBundle\OutputDataConfigToolkitBundle;
+use Pimcore\Bundle\StaticRoutesBundle\PimcoreStaticRoutesBundle;
 use Pimcore\Bundle\CustomReportsBundle\PimcoreCustomReportsBundle;
-use Pimcore\Bundle\ApplicationLoggerBundle\PimcoreApplicationLoggerBundle;
+use Pimcore\Bundle\GoogleMarketingBundle\PimcoreGoogleMarketingBundle;
 use Pimcore\Bundle\PersonalizationBundle\PimcorePersonalizationBundle;
-use Pimcore\Bundle\TinymceBundle\PimcoreTinymceBundle;
+use Pimcore\Bundle\ApplicationLoggerBundle\PimcoreApplicationLoggerBundle;
+use Pimcore\Bundle\EcommerceFrameworkBundle\PimcoreEcommerceFrameworkBundle;
+use Pimcore\Bundle\SimpleBackendSearchBundle\PimcoreSimpleBackendSearchBundle;
+use CustomerManagementFrameworkBundle\PimcoreCustomerManagementFrameworkBundle;
 use Pimcore\Bundle\GenericExecutionEngineBundle\PimcoreGenericExecutionEngineBundle;
+use Pimcore\Bundle\EcommerceFrameworkBundle\PimcorePaymentProviderPayPalSmartPaymentButtonBundle;
 
 return [
     //Twig\Extra\TwigExtraBundle\TwigExtraBundle::class => ['all' => true],
@@ -47,4 +48,5 @@ return [
     PimcoreXliffBundle::class => ['all' => true],
     PrestaSitemapBundle::class => ['all' => true],
     PimcoreGenericExecutionEngineBundle::class => ['all' => true],
+    CustomAdminBundle::class => ['all' => true],
 ];
